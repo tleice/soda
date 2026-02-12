@@ -1,0 +1,38 @@
+.todo-list {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.todo-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 600px) {
+    .todo-list {
+        margin: 10px;
+    }
+    .todo-item {
+        flex-direction: column;
+    }
+}
